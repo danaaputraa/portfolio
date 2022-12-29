@@ -1,0 +1,172 @@
+body {
+    font-family: 'BebasNeueRegular', sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* The side navigation menu */
+.sidebar {
+    margin: auto 0;
+    padding: 0;
+    width: 350px;
+    background-color: royalblue;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    z-index: 5;
+}
+
+.sidebar-content {
+    display: block;
+    margin-top: 50%;
+}
+
+/* Sidebar links */
+.sidebar-content a {
+    display: block;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'NEWACADEMYNEWACADEMY';
+}
+
+/* Active/current link */
+.sidebar-content a.active {
+    /* background-color: #aa0404; */
+    color: white;
+}
+
+/* Links on mouse-over */
+.sidebar-content a:hover:not(.active) {
+    color: black;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+.content {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    /* display: table-cell; */
+    vertical-align: center;
+    /* background-color: #555; */
+}
+
+.inner-content {
+    /* display: inline-block; */
+    position: absolute;
+    margin-left: 30%;
+    margin-right: 5%;
+    display: block;
+    top: 10%;
+    /* background-color: aqua; */
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 200px;
+    margin: 50px auto;
+    display: flex;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+}
+
+.title {
+    font-size: 65pt;
+    color: rgb(32, 32, 32);
+    margin-bottom: 0;
+}
+
+.subtitle {
+    font-weight: 100;
+    word-spacing: 20%;
+    color: rgb(32, 32, 32);
+    font-size: 20pt;
+}
+
+.subtitle a {
+    color: navy;
+    text-decoration: none;
+}
+
+.text-paragraf {
+    color: rgb(92, 92, 92);
+    font-family: 'StoriaSansRegular';
+    text-align: justify;
+}
+
+.contacts {
+    font-family: sans-serif;
+    display: flex;
+    margin-top: 40px;
+}
+
+.contacts-list {
+    background-color: darkblue;
+    float: left;
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    padding: 5px;
+}
+
+.contacts-list:hover {
+    background-color: lightblue;
+}
+
+.contacts-list i {
+    color: black;
+    font-size: 24pt;
+    text-align: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Experience Page */
+.exp {
+    display: flex;
+}
+
+.timeline-dots {
+    width: 15px;
+    height: 15px;
+    background-color: burlywood;
+    border: 5px solid rgb(165, 165, 165);
+    border-radius: 50%;
+    margin: auto 0;
+}
+
+.exp-content {
+    margin-left: 50px;
+}
+
+.exp-content h1 {
+    color: rgb(32, 32, 32);
+}
+
+.exp-content h3 {
+    color: rgb(165, 165, 165);
+    margin-bottom: 0;
+    font-family: 'StoriaSansRegular';
+    font-weight: bolder;
+}
+
+.exp-content p {
+    font-family: 'StoriaSansRegular';
+}
+
+.exp-content label {
+    color: darkblue;
+    font-weight: bold;
+    font-family: 'StoriaSansRegular';
+}
+
+.v-line {
+    border-left: 3px solid rgb(165, 165, 165);
+    height: 50px;
+    margin: 0 10px;
+    z-index: 10;
+}
